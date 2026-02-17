@@ -4,7 +4,7 @@ module top(
     output [1:0] led
 );
 
- wire a_out
+ wire a_out;
 
     circuit_a a_inst(
         .A(sw[0]),
