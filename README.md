@@ -29,6 +29,7 @@ In this lab we took two truth tables for two different circuits (Circuit A and C
 The Top Level file (top.v) combines all the individual circuits so they communicate with eachother. Individually each circuit would not know of the others existence. But in out Top Level fine we are able to concatinate our circuits in order to run the simulation that should act according to if the circuits were actually connected physically.
 
 ### 2 - Explain the function of the Constraints file.
+The function of the constraints file is to define each pin on the FPGA on the Basys3 board. Each pin is assigned to a switch. The pins are also called "package pins" and is set to the location of a switch and its index. The "set_property" pulls the names from the top.V file to function.
 
 ### 3 - Was the selection of Minterm and Maxterm correct for each circuit? What would you have chosen?
-
+The selection of Minterm and Maxterm was correct for each circuit. We had used the k-map to simplify the equations for circuits A and B and tested the simulation and on a physical board. Each test ran correctly after a few errors that had to be fixed.
